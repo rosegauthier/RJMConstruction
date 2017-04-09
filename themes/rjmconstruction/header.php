@@ -29,12 +29,22 @@
 
 					<h1 class="screen-reader-text">RJM Construction</h1>
 					<?php $logo = get_field('logo'); ?>
-					<div class="hero-content">
+					<div class="hero-content branded-font">
 						<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?> ">
 						<p class="tagline"><?php the_field('tagline'); ?></p>
 					</div>
 			</div> <!-- .hero-image -->
 
+		<?php endif; ?>
+
+		<?php if( is_page('order') ) : ?>
+			<?php $addressBackground = get_field('address_background', 'option'); ?>
+			<div class="address" style="background-image: url(<?php echo $addressBackground['url']; ?>);">
+				<div class="inner-wrapper">
+					<p class="branded-font">RJM Construction</p>
+					<p><?php the_field('address', 'option') ?></p>
+				</div>
+			</div>
 		<?php endif; ?>
 	</header><!-- #masthead -->
 

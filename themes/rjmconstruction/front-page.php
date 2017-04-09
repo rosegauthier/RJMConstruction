@@ -19,16 +19,16 @@ get_header(); ?>
 				</div>
 			</section>
 
-			<?php $addressBackground = get_field('address_background'); ?>
+			<?php $addressBackground = get_field('address_background', 'option'); ?>
 			<section class="address" style="background-image: url(<?php echo $addressBackground['url']; ?>);">
 				<div class="inner-wrapper">
-					<p>RJM Construction</p>
-					<p><?php the_field('address') ?></p>
+					<p class="branded-font">RJM Construction</p>
+					<p><?php the_field('address', 'option') ?></p>
 				</div>
 			</section>
 
-			<section class="home-form">
-				<div class="home-form__container">
+			<section class="form">
+				<div class="form__container">
 					<h2>Contact Us</h2>
 					<?php the_field('home_form') ?>
 				</div>

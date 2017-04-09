@@ -9,6 +9,16 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+@font-face {
+    font-family: Trajan;
+    src: url(./fonts/TrajanPro-Regular.otf);
+}
+
+@font-face {
+    font-family: TrajanBold;
+    src: url(./fonts/TrajanPro-Bold.otf);
+}
+
 @import "headings";
 
 @import "copy";
