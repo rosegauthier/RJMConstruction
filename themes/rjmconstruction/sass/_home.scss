@@ -2,6 +2,7 @@ body {
 	background-color: #F9F9F6;
 	font-family: $body-font;
 	font-size: 16px;
+	color: #888786;
 }
 
 h1, h2, h3, h4, ul, ol, li {
@@ -70,7 +71,6 @@ p {
 	padding: 120px 0;
 	p {
 		font-size: 22px;
-		color: #888786;
 	}
 }
 
@@ -106,7 +106,6 @@ p {
 	background-color: #ffffff;
 	h2 {
 		padding-bottom: 10px;
-		color: #888785;
 		font-size: 22px;
 	}
 	.gform_wrapper {
@@ -121,18 +120,12 @@ p {
 			}
 			.ginput_container {
 				margin-top: 5px;
+				span {
+					display: inline-block !important;
+				}
 			}
 			input[type="text"], textarea, select {
 				margin: 0 0 15px 0;
-				padding: 10px;
-				border-radius: 0;
-				border: 1px solid #EAEAEA;
-				background-color: #F8F8F8;
-				outline: none;
-				color: #888785;
-				&:focus {
-					border: 1px solid #6E2424;
-				}
 			}
 			input[type="text"] {
 				width: 95%;
@@ -140,9 +133,17 @@ p {
 			input[type=radio] {
 				margin-top: 0 !important;
 			}
-			.ginput_container_singleproduct input {
-				width: 60px;
-				margin-left: 5px;
+			.ginput_container_singleproduct {
+				@media all and (max-width: 667px) {
+					max-width: 210px;
+					.ginput_quantity_label {
+						margin-left: 0;
+					}
+				}
+				input {
+					width: 60px;
+					margin-left: 5px;
+				}
 			}
 			&.field_description_below .ginput_container_radio {
 				margin: 5px 0 25px 0;
