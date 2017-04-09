@@ -1,5 +1,7 @@
 body {
 	background-color: #F9F9F6;
+	font-family: $body-font;
+	font-size: 16px;
 }
 
 h1, h2, h3, h4, ul, ol, li {
@@ -8,7 +10,6 @@ h1, h2, h3, h4, ul, ol, li {
 
 p {
 	margin: 0;
-	font-size: 18px;
 }
 
 .branded-font {
@@ -21,7 +22,7 @@ p {
 }
 
 .inner-wrapper {
-	max-width: 940px;
+	max-width: 990px;
 	margin: 0 auto;
 	padding: 0 30px;
 }
@@ -47,6 +48,7 @@ p {
 			padding-top: 20px;
 			font-size: 24px;
 			text-transform: uppercase;
+			color: #1E1A17;
 		}
 	}
 }
@@ -140,6 +142,7 @@ p {
 				padding: 0 20px;
 				background-color: #6E2424;
 				border-radius: 0;
+				font-size: 16px;
 				color: white;
 				text-transform: uppercase;
 				border: 2px solid #6E2424;
@@ -159,6 +162,7 @@ p {
 footer .site-info {
 	padding: 30px 0 10px 0;
 	background-color: #888785;
+	font-size: 14px;
 	color: #ffffff;
 	text-align: center;
 }

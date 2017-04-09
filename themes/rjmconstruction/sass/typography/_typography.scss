@@ -19,6 +19,11 @@ textarea {
     src: url(./fonts/TrajanPro-Bold.otf);
 }
 
+@font-face {
+    font-family: CenturyGothic;
+    src: url(./fonts/CenturyGothic.ttf);
+}
+
 @import "headings";
 
 @import "copy";
