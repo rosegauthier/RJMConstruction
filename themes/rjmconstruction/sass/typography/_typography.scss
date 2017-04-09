@@ -13,6 +13,11 @@
     src: url(./fonts/CenturyGothic.ttf);
 }
 
+@font-face {
+    font-family: CenturyGothicBold;
+    src: url(./fonts/CenturyGothic-Bold.ttf);
+}
+
 @import "headings";
 
 @import "copy";

@@ -151,6 +151,11 @@ p {
 			&.gfield {
 				margin: 0;
 			}
+			&.gfield_price label {
+				@media all and (max-width: 667px) {
+					font-family: CenturyGothicBold, sans-serif;
+				}
+			}
 			&.gsection {
 				margin-bottom: 15px;
 			}
