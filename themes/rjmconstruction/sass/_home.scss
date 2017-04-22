@@ -17,11 +17,6 @@ p {
 	font-family: $header-font;
 }
 
-.wrapper {
-	max-width: 1600px;
-	margin: 0 auto;
-}
-
 .inner-wrapper {
 	max-width: 990px;
 	margin: 0 auto;
@@ -37,6 +32,7 @@ p {
 	border-top: 20px solid #888785;
 	border-bottom: 20px solid #888785;
 	@media all and (max-width: 667px) {
+		height: 60vh;
 		background-position: 80% center;
 	}
 	.hero-content {
@@ -69,8 +65,14 @@ p {
 
 .about {
 	padding: 120px 0;
+	@media all and (max-width: 667px) {
+		padding: 60px 0;
+	}
 	p {
 		font-size: 22px;
+		@media all and (max-width: 667px) {
+			font-size: 18px;
+		}
 	}
 }
 
@@ -94,7 +96,7 @@ p {
 }
 
 footer .site-info {
-	padding: 30px 0 10px 0;
+	padding: 30px 0;
 	background-color: #888785;
 	font-size: 14px;
 	color: #ffffff;
